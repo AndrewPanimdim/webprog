@@ -1,0 +1,16 @@
+
+#hello {
+    animation: fadeIn 1s ease-in-out;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    font-weight: bold;
+    font-size: 2vw;
+    cursor: pointer;
+    
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
