@@ -33,6 +33,13 @@ body {
   align-items: center;
 }
 
+#education, #experience, #hobbiesNinterests {
+    background-color: #262626a6;
+    width: 70%;
+    height: 40%;
+}
+
+
 #education h2, #experience h2, #hobbiesNinterests h2 {
   font-size: 2.2vw;
   color: rgb(195, 195, 195);
