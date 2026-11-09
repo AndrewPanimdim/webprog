@@ -1,5 +1,5 @@
 body {
-  background-color: #1E1E1E;
+  background-color: #090909;
   color: rgb(220, 220, 220);
   font-family: "Barlow Condensed", sans-serif;
   display: flex;
@@ -36,10 +36,11 @@ body {
 }
 
 #education, #experience, #hobbiesNinterests {
-    background-color: #262626a6;
+    background-color: #26262664;
     width: 30%;
     height: 20%;
     padding: 3%;
+    border-radius: 30px;
 }
 
 
