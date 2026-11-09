@@ -1,8 +1,9 @@
 body {
+    color: rgb(15, 15, 15);
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Centers vertically */
-  align-items: center;     /* Centers horizontally */
+  justify-content: center; 
+  align-items: center;     
   min-height: 100vh;
   margin: 0;
   text-align: center;
@@ -12,10 +13,24 @@ body {
     font-size: 4vw;
     position: absolute;
     top: 30%;
+    font-family: "Bungee", sans-serif;
+    
 
 }
 
 #aboutmecontents {
     position: absolute;
     top: 50%;
+}
+
+#education h1, #experience h1, #hobbiesNinterest h1{
+    font-size: 2.5vw;
+    color: rgb(195, 195, 195);
+}
+
+#educationcontent, #experiencecontent, #hobbiesNinterestcontent {
+    color: rgb(103, 103, 103);
+    width: 60vw;
+    height: 30vh;
+    font-size: clamp(1rem, 0.9rem + 0.5vw, 1.25rem);
 }
