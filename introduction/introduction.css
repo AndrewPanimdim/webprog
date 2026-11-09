@@ -1,8 +1,8 @@
 body {
   display: flex;
-  flex-direction: column; 
-  justify-content: center; 
-  align-items: center;     
+  flex-direction: column;
+  justify-content: center; /* Centers vertically */
+  align-items: center;     /* Centers horizontally */
   min-height: 100vh;
   margin: 0;
   text-align: center;
