@@ -1,6 +1,21 @@
 body {
-  display: grid;
-  place-items: center;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center;     
   min-height: 100vh;
   margin: 0;
+  text-align: center;
+}
+
+#aboutme {
+    font-size: 4vw;
+    position: absolute;
+    top: 30%;
+
+}
+
+#aboutmecontents {
+    position: absolute;
+    top: 50%;
 }
