@@ -1,68 +1,14 @@
-body {
-  background-color: #090909;
-  color: rgb(220, 220, 220);
-  font-family: "Barlow Condensed", sans-serif;
+.container {
   display: flex;
-  flex-direction: column;
-  align-items: center;     
-  min-height: 100vh;
-  margin: 0;
-  text-align: center;
-  gap: 1.5rem;
-  padding: 2rem 1rem;
+  flex-wrap: wrap;
+  background-color: DodgerBlue;
 }
 
-#personalwebpage {
-  font-family: "Bungee", sans-serif;
-  font-size: 1.25rem;
-  color: rgb(200, 200, 200);
-  letter-spacing: 1px;
-}
-
-#aboutme {
-  font-family: "Bungee", sans-serif;
-  font-size: 2.5rem;
-  color: rgb(255, 255, 255);
-  margin-bottom: 0.5rem;
-}
-
-#aboutmecontents {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  width: 100%;
-  align-items: center;
-}
-
-#education, #experience, #hobbiesNinterests {
-  background-color: #161616;
-  width: 90%;
-  max-width: 600px;
-  padding: 1.5rem;
-  border-radius: 16px;
-  border: 1px solid #262626;
-  box-sizing: border-box;
-}
-
-#education h2, #experience h2, #hobbiesNinterests h2 {
-  font-size: 1.4rem;
-  color: rgb(255, 255, 255);
-  margin-top: 0;
-  margin-bottom: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
-
-#educationcontent, #experiencecontent, #hobbiesNinterestcontent {
-  color: rgb(150, 150, 150);
-  font-size: clamp(1rem, 0.9rem + 0.3vw, 1.15rem);
-  line-height: 1.5;
-  margin: 0;
-}
-
-#gallery img {
-  border-radius: 12px;
-  max-width: 100%;
-  height: auto;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+.container div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;  
+  font-size: 30px;
 }
