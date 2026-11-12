@@ -22,24 +22,45 @@ main {
 }
 
 /* FLEXBOX ITEMS */
-.content-card {
-    flex: 1 1 220px;
-    max-width: 260px;
-    min-width: 0;
-
-    padding: 18px;
-
-    background: #161616;
-    border: 1px solid #292929;
-    border-radius: 10px;
+/* MAIN CONTENT */
+main {
+    max-width: 580px;
+    margin: 30px auto;
+    padding: 0 15px;
 }
 
-/* CARD TEXT */
+/* FLEXBOX WRAPPER */
+.content-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 12px;
+
+    max-width: 460px;
+    margin: 0 auto;
+}
+
+/* FLEX ITEMS */
+.content-card {
+    flex: 1 1 190px;
+    max-width: 220px;
+    min-width: 0;
+
+    padding: 15px;
+    background: #191919;
+    border: 1px solid #292929;
+    border-radius: 8px;
+}
+
+/* SMALLER CARD TEXT */
 .content-card h2 {
-    font-size: 19px;
+    font-size: 18px;
+    margin: 5px 0 10px;
 }
 
 .content-card p {
-    font-size: 13px;
+    font-size: 12px;
     line-height: 1.6;
 }
