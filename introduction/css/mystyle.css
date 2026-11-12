@@ -6,6 +6,7 @@ main {
     padding: 0 20px;
 }
 
+
 /* FLEXBOX CONTAINER */
 .content-container {
     display: flex;
@@ -44,6 +45,8 @@ main {
 
 /* FLEX ITEMS */
 .content-card {
+
+    outline: 1px solid #777;
     flex: 1 1 190px;
     max-width: 220px;
     min-width: 0;
