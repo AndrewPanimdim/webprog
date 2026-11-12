@@ -1,4 +1,5 @@
 
+/* GENERAL */
 * {
     box-sizing: border-box;
     scroll-behavior: smooth;
@@ -14,25 +15,25 @@ body {
 
 /* HEADER */
 header {
-    max-width: 650px;
+    max-width: 950px;
     margin: auto;
     padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    gap: 12px;
+    gap: 15px;
 }
 
 header h1 {
-    font-size: 14px;
+    font-size: 15px;
     letter-spacing: 2px;
 }
 
 nav {
     display: flex;
     flex-wrap: wrap;
-    gap: 12px;
+    gap: 15px;
 }
 
 nav a,
@@ -44,8 +45,8 @@ footer a {
 
 /* MAIN */
 main {
-    max-width: 600px;
-    margin: 25px auto;
+    max-width: 950px;
+    margin: 30px auto;
     padding: 0 20px;
 }
 
@@ -53,131 +54,143 @@ main {
 .profile {
     display: flex;
     align-items: center;
-    gap: 20px;
-    padding: 15px 0 30px;
-    border-bottom: 1px solid #292929;
+    gap: 25px;
+    padding: 20px 0 35px;
+    border-bottom: 1px solid #333;
 }
 
 .profile img {
-    width: 90px;
-    height: 90px;
+    width: 110px;
+    height: 110px;
     border-radius: 50%;
     object-fit: cover;
     flex-shrink: 0;
 }
 
 .profile h2 {
-    font-size: 25px;
+    font-size: 28px;
     margin: 5px 0;
 }
 
-/* FLEXBOX LAYOUT */
+/* FLEXBOX CONTENT */
 .content-container {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: stretch;
-    gap: 12px;
+    gap: 18px;
 
     width: 100%;
-    max-width: 420px;
-    margin: 25px auto;
+    margin: 30px auto;
 }
 
 /* FLEX ITEMS */
 .content-card {
-    flex: 0 1 195px;
+    flex: 1 1 220px;
     min-width: 0;
-    padding: 15px;
 
+    padding: 20px;
     background: #1b1b1b;
-    border: 1px solid #333;
-    border-radius: 6px;
+    border: 1px solid #444;
+    border-radius: 8px;
+    
+    transition: background 0.2s ease;
 }
 
-.content-card .number {
-    color: #777;
-    font-size: 9px;
-    letter-spacing: 1px;
+.content-card:hover {
+    background: #252525;
+}
+
+.content-card .number,
+.subtitle {
+    color: #888;
+    font-size: 10px;
+    letter-spacing: 2px;
 }
 
 .content-card h2 {
-    font-size: 17px;
-    margin: 8px 0;
+    font-size: 19px;
+    margin: 10px 0;
 }
 
 .content-card p {
     color: #aaa;
-    font-size: 12px;
+    font-size: 13px;
     margin: 0;
-}
-
-/* GENERAL TEXT */
-.subtitle,
-.number {
-    color: #777;
-    font-size: 10px;
-    letter-spacing: 1px;
-}
-
-section h2 {
-    color: white;
-}
-
-section p {
-    color: #aaa;
 }
 
 /* GALLERY */
 #gallery {
-    border-top: 1px solid #292929;
-    padding-top: 20px;
+    border-top: 1px solid #333;
+    padding-top: 25px;
 }
 
 .gallery {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 15px;
+    gap: 15px;
+    margin-top: 20px;
 }
 
 .gallery img {
-    flex: 1 1 150px;
-    width: 100%;
+    flex: 1 1 220px;
     min-width: 0;
-    height: 130px;
+    height: 180px;
     object-fit: cover;
-    border-radius: 5px;
+    border-radius: 6px;
 }
 
 /* FOOTER */
 footer {
-    max-width: 600px;
+    max-width: 950px;
     margin: auto;
     padding: 20px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
     gap: 10px;
-    color: #777;
-    font-size: 11px;
+    color: #888;
+    font-size: 12px;
 }
 
-/* MOBILE */
-@media (max-width: 480px) {
+/* TABLET */
+@media (max-width: 700px) {
     header {
         flex-direction: column;
         align-items: flex-start;
     }
 
+    .profile img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .profile h2 {
+        font-size: 24px;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 480px) {
+    main {
+        margin-top: 15px;
+        padding: 0 15px;
+    }
+
     .profile {
-        align-items: flex-start;
         flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .profile h2 {
+        font-size: 23px;
     }
 
     .content-container {
-        max-width: 100%;
+        gap: 12px;
     }
 
     .content-card {
@@ -186,5 +199,6 @@ footer {
 
     .gallery img {
         flex-basis: 100%;
+        height: 150px;
     }
 }
