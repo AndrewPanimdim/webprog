@@ -15,9 +15,10 @@ body {
 
 /* HEADER */
 header {
-    max-width: 950px;
+    max-width: 1000px;
     margin: auto;
     padding: 20px;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -45,7 +46,7 @@ footer a {
 
 /* MAIN */
 main {
-    max-width: 950px;
+    max-width: 1000px;
     margin: 30px auto;
     padding: 0 20px;
 }
@@ -54,17 +55,22 @@ main {
 .profile {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 25px;
     padding: 20px 0 35px;
     border-bottom: 1px solid #333;
 }
 
 .profile img {
-    width: 110px;
-    height: 110px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     object-fit: cover;
     flex-shrink: 0;
+}
+
+.profile-info {
+    flex: 1 1 250px;
 }
 
 .profile h2 {
@@ -75,8 +81,7 @@ main {
 /* FLEXBOX CONTENT */
 .content-container {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     justify-content: center;
     align-items: stretch;
     gap: 18px;
@@ -85,21 +90,15 @@ main {
     margin: 30px auto;
 }
 
-/* FLEX ITEMS */
+/* FLEXBOX CARDS */
 .content-card {
-    flex: 1 1 220px;
+    flex: 1 1 280px;
     min-width: 0;
 
-    padding: 20px;
+    padding: 22px;
     background: #1b1b1b;
     border: 1px solid #444;
     border-radius: 8px;
-    
-    transition: background 0.2s ease;
-}
-
-.content-card:hover {
-    background: #252525;
 }
 
 .content-card .number,
@@ -110,7 +109,7 @@ main {
 }
 
 .content-card h2 {
-    font-size: 19px;
+    font-size: 20px;
     margin: 10px 0;
 }
 
@@ -134,71 +133,25 @@ main {
 }
 
 .gallery img {
-    flex: 1 1 220px;
+    flex: 1 1 280px;
     min-width: 0;
-    height: 180px;
+    height: 200px;
     object-fit: cover;
     border-radius: 6px;
 }
 
 /* FOOTER */
 footer {
-    max-width: 950px;
+    max-width: 1000px;
     margin: auto;
     padding: 20px;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     gap: 10px;
+
     color: #888;
     font-size: 12px;
-}
-
-/* TABLET */
-@media (max-width: 700px) {
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .profile img {
-        width: 90px;
-        height: 90px;
-    }
-
-    .profile h2 {
-        font-size: 24px;
-    }
-}
-
-/* MOBILE */
-@media (max-width: 480px) {
-    main {
-        margin-top: 15px;
-        padding: 0 15px;
-    }
-
-    .profile {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 12px;
-    }
-
-    .profile h2 {
-        font-size: 23px;
-    }
-
-    .content-container {
-        gap: 12px;
-    }
-
-    .content-card {
-        flex-basis: 100%;
-    }
-
-    .gallery img {
-        flex-basis: 100%;
-        height: 150px;
-    }
 }
