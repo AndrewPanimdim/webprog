@@ -1,68 +1,100 @@
+
+/* GENERAL */
 body {
-  background-color: #090909;
-  color: rgb(220, 220, 220);
-  font-family: "Barlow Condensed", sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;     
-  min-height: 100vh;
-  margin: 0;
-  text-align: center;
-  gap: 1.5rem;
-  padding: 2rem 1rem;
+    background: #111;
+    color: #eee;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
 }
 
-#personalwebpage {
-  font-family: "Bungee", sans-serif;
-  font-size: 1.25rem;
-  color: rgb(200, 200, 200);
-  letter-spacing: 1px;
+/* HEADER */
+header {
+    text-align: center;
+    margin-bottom: 30px;
 }
 
-#aboutme {
-  font-family: "Bungee", sans-serif;
-  font-size: 2.5rem;
-  color: rgb(255, 255, 255);
-  margin-bottom: 0.5rem;
+header h1 {
+    margin-bottom: 5px;
 }
 
-#aboutmecontents {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  width: 100%;
-  align-items: center;
+header p {
+    color: #999;
 }
 
-#education, #experience, #hobbiesNinterests {
-  background-color: #161616;
-  width: 90%;
-  max-width: 600px;
-  padding: 1.5rem;
-  border-radius: 16px;
-  border: 1px solid #262626;
-  box-sizing: border-box;
+/* MAIN CONTENT */
+main {
+    max-width: 650px;
+    margin: auto;
 }
 
-#education h2, #experience h2, #hobbiesNinterests h2 {
-  font-size: 1.4rem;
-  color: rgb(255, 255, 255);
-  margin-top: 0;
-  margin-bottom: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
+/* PROFILE */
+.profile {
+    text-align: center;
 }
 
-#educationcontent, #experiencecontent, #hobbiesNinterestcontent {
-  color: rgb(150, 150, 150);
-  font-size: clamp(1rem, 0.9rem + 0.3vw, 1.15rem);
-  line-height: 1.5;
-  margin: 0;
+.profile img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
-#gallery img {
-  border-radius: 12px;
-  max-width: 100%;
-  height: auto;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+/* SECTIONS */
+section {
+    background: #1c1c1c;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+section h2 {
+    font-size: 20px;
+    margin-top: 0;
+    color: white;
+}
+
+section p {
+    color: #aaa;
+    margin-bottom: 0;
+}
+
+/* GALLERY */
+.gallery {
+    display: flex;
+    gap: 10px;
+}
+
+.gallery img {
+    width: 50%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    color: #777;
+    margin-top: 25px;
+    font-size: 14px;
+}
+
+/* MOBILE */
+@media (max-width: 480px) {
+    body {
+        padding: 15px;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    .gallery {
+        flex-direction: column;
+    }
+
+    .gallery img {
+        width: 100%;
+    }
 }
