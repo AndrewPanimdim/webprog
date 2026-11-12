@@ -1,105 +1,148 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<!-- HTML - The Head Element -->
-<title>Andrew Panimdim</title>
-<link rel="stylesheet" href="introduction.css">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bungee&family=Caacupe+One&family=Changa+One:ital@0;1&family=Titan+One&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrew Panimdim</title>
+    <link rel="stylesheet" href="css/mystyle.css">
 </head>
-
 <body>
 
-  <div id="personalwebpage">Andrew's Personal Profile Web page</div>
+    <header>
+        <h1>ANDREW PANIMDIM</h1>
 
-  <div id="aboutme">About Me</div>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#experience">Experience</a>
+            <a href="#interests">Interests</a>
+            <a href="#goals">Goals</a>
+            <a href="#gallery">Gallery</a>
+        </nav>
+    </header>
 
+    <main>
 
-  <div id="aboutmecontents" class="profile-container"> 
-  
-        <div id="education"> 
-          <h2>education</h2>
-        
-            <div id="educationcontent">
-              I'm currently a second year Bachelor of Science in Computer Science Major in Cybersecurity and Forensics student at 
-              
-              <a href="https://www.apc.edu.ph" target="_blank">Asia Pacific College</a>.
+        <!-- ABOUT ME -->
+        <section class="profile" id="about">
+
+            <img src="https://i.pinimg.com/736x/9a/0f/b7/9a0fb77763ed494a5a7af3d2c21ae3a5.jpg"
+                 alt="Andrew's profile picture">
+
+            <div class="profile-info">
+                <p class="subtitle">PERSONAL PROFILE</p>
+
+                <h2>Hello, I'm Andrew.</h2>
+
+                <p>
+                    I am a BS Computer Science student at NU - APC.
+                    I enjoy learning and creating software.
+                </p>
             </div>
+
+        </section>
+
+
+        <!-- FLEXBOX CONTENT CONTAINER -->
+        <div class="content-container">
+
+            <!-- EDUCATION -->
+            <section id="education" class="content-card">
+
+                <p class="number">01 / EDUCATION</p>
+
+                <h2>Education & Achievements</h2>
+
+                <p>
+                    I am currently pursuing a Bachelor of Science in
+                    Computer Science Major in Cybersecurity and Forensics
+                    at NU - APC. I also took my Senior High School in the
+                    same institution, graduating with High Honors.
+                </p>
+
+            </section>
+
+
+            <!-- EXPERIENCE -->
+            <section id="experience" class="content-card">
+
+                <p class="number">02 / EXPERIENCE</p>
+
+                <h2>IT Experience</h2>
+
+                <p>
+                    I don't have much experience yet, but I recently
+                    worked as a web developer and UI/UX team member for
+                    APC - NAMFREL BARMM's first parliamentary election.
+                    I also built a couple of side projects during my
+                    first year of college, mainly using JavaScript.
+                </p>
+
+            </section>
+
+
+            <!-- HOBBIES -->
+            <section id="interests" class="content-card">
+
+                <p class="number">03 / INTERESTS</p>
+
+                <h2>Hobbies & Interests</h2>
+
+                <p>
+                    I enjoy playing basketball, drinking coffee,
+                    listening to music, running, and learning new things.
+                </p>
+
+            </section>
+
+
+            <!-- GOALS -->
+            <section id="goals" class="content-card">
+
+                <p class="number">04 / FUTURE</p>
+
+                <h2>Goals & Dreams</h2>
+
+                <p>
+                    My goal is to become a skilled software developer,
+                    cybersecurity professional, and AI engineer.
+                    I want to build useful applications and develop
+                    solutions that make a difference.
+                </p>
+
+            </section>
+
         </div>
 
 
-        <div id="experience">
-          <h2>experience</h2>
-            <div id="experiencecontent">
-              I have created quite a few JavaScript side projects during my free time. I've also participated in NAMFREL BARMM's first Parliamentary Election as part of the web dev and UI/UX team. 
+        <!-- GALLERY -->
+        <section id="gallery">
+
+            <p class="number">05 / GALLERY</p>
+
+            <h2>Picture Gallery</h2>
+
+            <div class="gallery">
+
+                <img
+                    src="https://image.okayplayer.com/345838.webp?imageId=345838&width=960&height=792&format=jpg"
+                    alt="Gallery image 1">
+
+                <img
+                    src="https://cdn-images.dzcdn.net/images/cover/7ce6b8452fae425557067db6e6a1cad5/1900x1900-000000-80-0-0.jpg"
+                    alt="Gallery image 2">
+
             </div>
-        </div>
 
-        
-        <div id="hobbiesNinterests"> 
-          <h2>hobbies and interests</h2>
-          <div id="hobbiesNinterestcontent">
-            I like listening to music and playing basketball.
-          </div>
-        </div>
+        </section>
 
-        <div id="quickfacts" style="margin: 20px 0;">
-          <h2>Quick Overview</h2>
-          
-          <table border="1" style="margin: 0 auto; border-collapse: collapse; color: inherit; padding: 5px;">
-            <tr>
-              <th style="padding: 8px;">Category</th>
-              <th style="padding: 8px;">Details</th>
-            </tr>
-            <tr>
-              <td style="padding: 8px;">Institution</td>
-              <td style="padding: 8px;">Asia Pacific College</td>
-            </tr>
-            <tr>
-              <td style="padding: 8px;">Core Focus</td>
-              <td style="padding: 8px;">Cybersecurity & Forensics</td>
-            </tr>
-          </table>
+    </main>
 
-          <!-- HTML Lists -->
-          <ul style="list-style-type: none; padding: 0; margin-top: 15px;">
-            <li> <span style="font-weight: bold;">Tech Stack:</span> JavaScript, Python, React</li>
-            <li> <span style="font-weight: bold;">Interests:</span> Music, Basketball</li>
-          </ul>
-        </div>
+    <footer>
+        <p>© 2026 Andrew Panimdim</p>
+        <a href="#about">Back to top ↑</a>
+    </footer>
 
-
-        <div id="gallery">
-          <p>
-            <!-- HTML Images -->
-            <img src="https://i.guim.co.uk/img/media/e27d48c78a8b83f24f10fcfecfb06c3921bd5641/492_589_2939_1764/master/2939.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=b31d16298f45ee22a8d70b111eb6f752" alt="Christmas activity with GK Hiyas ng Calamba" width="700" height="700">   
-          </p>
-        </div>
-
-
-
-
-    
-<h1>flex-wrap: wrap</h1>
-
-<p>flex-wrap: wrap; specifies that the flex items will wrap if necessary:</p>
-
-<div class="container">
-  <div>1</div>
-  <div>2</div>
-  <div>3</div>  
-  <div>4</div>
-  <div>5</div>
-  <div>6</div>  
-  <div>7</div>
-  <div>8</div>
-  <div>9</div>  
-</div>
-
-  </div>
-
-  <script src="introduction.js"></script>
 </body>
 </html>
