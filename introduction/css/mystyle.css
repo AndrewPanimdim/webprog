@@ -1,171 +1,148 @@
 
-/* GENERAL */
-* {
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrew Panimdim</title>
+    <link rel="stylesheet" href="css/mystyle.css">
+</head>
+<body>
 
-body {
-    margin: 0;
-    background: #111;
-    color: #eee;
-    font-family: Arial, sans-serif;
-    line-height: 1.7;
-}
+    <header>
+        <h1>ANDREW PANIMDIM</h1>
 
-/* HEADER */
-header {
-    max-width: 850px;
-    margin: auto;
-    padding: 25px 20px;
+        <nav>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#experience">Experience</a>
+            <a href="#interests">Interests</a>
+            <a href="#goals">Goals</a>
+            <a href="#gallery">Gallery</a>
+        </nav>
+    </header>
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 15px;
-}
+    <main>
 
-header h1 {
-    font-size: 15px;
-    letter-spacing: 2px;
-}
+        <!-- ABOUT ME -->
+        <section class="profile" id="about">
 
-nav {
-    display: flex;
-    gap: 15px;
-    flex-wrap: wrap;
-}
+            <img src="https://i.pinimg.com/736x/9a/0f/b7/9a0fb77763ed494a5a7af3d2c21ae3a5.jpg"
+                 alt="Andrew's profile picture">
 
-nav a,
-footer a {
-    color: #999;
-    text-decoration: none;
-    font-size: 12px;
-}
+            <div class="profile-info">
+                <p class="subtitle">PERSONAL PROFILE</p>
 
-nav a:hover,
-footer a:hover {
-    color: white;
-}
+                <h2>Hello, I'm Andrew.</h2>
 
-/* MAIN */
-main {
-    max-width: 750px;
-    margin: 45px auto;
-    padding: 0 20px;
-}
+                <p>
+                    I am a BS Computer Science student at NU - APC.
+                    I enjoy learning and creating software.
+                </p>
+            </div>
 
-section {
-    padding: 30px 0;
-    border-bottom: 1px solid #292929;
-}
+        </section>
 
-section h2 {
-    color: white;
-    font-size: 24px;
-    margin: 5px 0 10px;
-}
 
-section p {
-    color: #999;
-    max-width: 600px;
-    margin: 0;
-}
+        <!-- FLEXBOX CONTENT CONTAINER -->
+        <div class="content-container">
 
-/* PROFILE */
-.profile {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    padding: 20px 0 45px;
-}
+            <!-- EDUCATION -->
+            <section id="education" class="content-card">
 
-.profile img {
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-    object-fit: cover;
-    flex-shrink: 0;
-}
+                <p class="number">01 / EDUCATION</p>
 
-.profile h2 {
-    font-size: 32px;
-}
+                <h2>Education & Achievements</h2>
 
-.subtitle,
-.number {
-    color: #777;
-    font-size: 11px;
-    letter-spacing: 2px;
-}
+                <p>
+                    I am currently pursuing a Bachelor of Science in
+                    Computer Science Major in Cybersecurity and Forensics
+                    at NU - APC. I also took my Senior High School in the
+                    same institution, graduating with High Honors.
+                </p>
 
-/* GALLERY */
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-    margin-top: 20px;
-}
+            </section>
 
-.gallery img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 6px;
-}
 
-/* FOOTER */
-footer {
-    max-width: 750px;
-    margin: auto;
-    padding: 25px 20px;
+            <!-- EXPERIENCE -->
+            <section id="experience" class="content-card">
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+                <p class="number">02 / EXPERIENCE</p>
 
-    color: #777;
-    font-size: 12px;
-}
+                <h2>IT Experience</h2>
 
-/* MOBILE */
-@media (max-width: 600px) {
+                <p>
+                    I don't have much experience yet, but I recently
+                    worked as a web developer and UI/UX team member for
+                    APC - NAMFREL BARMM's first parliamentary election.
+                    I also built a couple of side projects during my
+                    first year of college, mainly using JavaScript.
+                </p>
 
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+            </section>
 
-    nav {
-        gap: 12px;
-    }
 
-    main {
-        margin-top: 20px;
-    }
+            <!-- HOBBIES -->
+            <section id="interests" class="content-card">
 
-    .profile {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 15px;
-    }
+                <p class="number">03 / INTERESTS</p>
 
-    .profile img {
-        width: 110px;
-        height: 110px;
-    }
+                <h2>Hobbies & Interests</h2>
 
-    .profile h2 {
-        font-size: 27px;
-    }
+                <p>
+                    I enjoy playing basketball, drinking coffee,
+                    listening to music, running, and learning new things.
+                </p>
 
-    section {
-        padding: 25px 0;
-    }
+            </section>
 
-    .gallery img {
-        height: 150px;
-    }
 
-}
+            <!-- GOALS -->
+            <section id="goals" class="content-card">
+
+                <p class="number">04 / FUTURE</p>
+
+                <h2>Goals & Dreams</h2>
+
+                <p>
+                    My goal is to become a skilled software developer,
+                    cybersecurity professional, and AI engineer.
+                    I want to build useful applications and develop
+                    solutions that make a difference.
+                </p>
+
+            </section>
+
+        </div>
+
+
+        <!-- GALLERY -->
+        <section id="gallery">
+
+            <p class="number">05 / GALLERY</p>
+
+            <h2>Picture Gallery</h2>
+
+            <div class="gallery">
+
+                <img
+                    src="https://image.okayplayer.com/345838.webp?imageId=345838&width=960&height=792&format=jpg"
+                    alt="Gallery image 1">
+
+                <img
+                    src="https://cdn-images.dzcdn.net/images/cover/7ce6b8452fae425557067db6e6a1cad5/1900x1900-000000-80-0-0.jpg"
+                    alt="Gallery image 2">
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Andrew Panimdim</p>
+        <a href="#about">Back to top ↑</a>
+    </footer>
+
+</body>
+</html>
