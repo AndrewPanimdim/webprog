@@ -1,148 +1,106 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andrew Panimdim</title>
-    <link rel="stylesheet" href="css/mystyle.css">
+<title>Page Title</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
 
-    <header>
-        <h1>ANDREW PANIMDIM</h1>
+<h1>Personal Profile Web Page</h1>
 
-        <nav>
-            <a href="#about">About</a>
-            <a href="#education">Education</a>
-            <a href="#experience">Experience</a>
-            <a href="#interests">Interests</a>
-            <a href="#goals">Goals</a>
-            <a href="#gallery">Gallery</a>
-        </nav>
-    </header>
+<div class="container-fluid mt-3">
+  <h1>About Me</h1>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md bg-primary text-white">
+          Educational Attainment<br>
+          Senior High School: Asia Pacific College (2023-2025)<br>
+          College: Asia Pacific College (2025-Present)
+      </div>
+      <div class="col-md bg-dark text-white">
+          In the time you set around worrying about it, trying to plan on painting.<br>
+          You could've completed the painting already.<br>
+          Let it happen.<br>
+      </div>
+    </div>  
+  </div>
+  <br>
+  
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md bg-primary text-white">1 of 4</div>
+      <div class="col-md bg-dark text-white">2 of 4</div>
+      <div class="col-md bg-primary text-white">3 of 4</div>
+      <div class="col-md bg-dark text-white">4 of 4</div>
+    </div>  
+  </div>
+</div>
 
-    <main>
-
-        <!-- ABOUT ME -->
-        <section class="profile" id="about">
-
-            <img src="https://i.pinimg.com/736x/9a/0f/b7/9a0fb77763ed494a5a7af3d2c21ae3a5.jpg"
-                 alt="Andrew's profile picture">
-
-            <div class="profile-info">
-                <p class="subtitle">PERSONAL PROFILE</p>
-
-                <h2>Hello, I'm Andrew.</h2>
-
-                <p>
-                    I am a BS Computer Science student at NU - APC.
-                    I enjoy learning and creating software.
-                </p>
-            </div>
-
-        </section>
-
-
-        <!-- FLEXBOX CONTENT CONTAINER -->
-        <div class="content-container">
-
-            <!-- EDUCATION -->
-            <section id="education" class="content-card">
-
-                <p class="number">01 / EDUCATION</p>
-
-                <h2>Education & Achievements</h2>
-
-                <p>
-                    I am currently pursuing a Bachelor of Science in
-                    Computer Science Major in Cybersecurity and Forensics
-                    at NU - APC. I also took my Senior High School in the
-                    same institution, graduating with High Honors.
-                </p>
-
-            </section>
-
-
-            <!-- EXPERIENCE -->
-            <section id="experience" class="content-card">
-
-                <p class="number">02 / EXPERIENCE</p>
-
-                <h2>IT Experience</h2>
-
-                <p>
-                    I don't have much experience yet, but I recently
-                    worked as a web developer and UI/UX team member for
-                    APC - NAMFREL BARMM's first parliamentary election.
-                    I also built a couple of side projects during my
-                    first year of college, mainly using JavaScript.
-                </p>
-
-            </section>
-
-
-            <!-- HOBBIES -->
-            <section id="interests" class="content-card">
-
-                <p class="number">03 / INTERESTS</p>
-
-                <h2>Hobbies & Interests</h2>
-
-                <p>
-                    I enjoy playing basketball, drinking coffee,
-                    listening to music, running, and learning new things.
-                </p>
-
-            </section>
-
-
-            <!-- GOALS -->
-            <section id="goals" class="content-card">
-
-                <p class="number">04 / FUTURE</p>
-
-                <h2>Goals & Dreams</h2>
-
-                <p>
-                    My goal is to become a skilled software developer,
-                    cybersecurity professional, and AI engineer.
-                    I want to build useful applications and develop
-                    solutions that make a difference.
-                </p>
-
-            </section>
-
-        </div>
-
-
-        <!-- GALLERY -->
-        <section id="gallery">
-
-            <p class="number">05 / GALLERY</p>
-
-            <h2>Picture Gallery</h2>
-
-            <div class="gallery">
-
-                <img
-                    src="https://image.okayplayer.com/345838.webp?imageId=345838&width=960&height=792&format=jpg"
-                    alt="Gallery image 1">
-
-                <img
-                    src="https://cdn-images.dzcdn.net/images/cover/7ce6b8452fae425557067db6e6a1cad5/1900x1900-000000-80-0-0.jpg"
-                    alt="Gallery image 2">
-
-            </div>
-
-        </section>
-
-    </main>
-
-    <footer>
-        <p>© 2026 Andrew Panimdim</p>
-        <a href="#about">Back to top ↑</a>
-    </footer>
+<p>
+ 
+<p>
+  <a href="#about">About Me</a> |
+  <a href="#hobbies">Hobbies</a> |
+  <a href="#gallery">Gallery</a> |
+  <a href="https://www.apc.edu.ph" target="_blank">Asia Pacific College</a>
+</p>
+ 
+<div id="about">
+  <h2>About Me</h2>
+  <p>I am <span>Earl Andrew C. Panimdim</span></p>
+  <p>I study at Asia Pacific College currently in the second year of college</p>
+  <p>My Course is Bachelor of Science in Computer Science with Specialization in Cybersecurity and Forensics</p>
+  <p class="highlight">Code code code code</p>
+</div>
+ 
+<div>
+  <h2>Quick Facts</h2>
+  <table>
+    <tr>
+      <th>Item</th>
+      <th>Details</th>
+    </tr>
+    <tr>
+      <td>Name</td>
+      <td>Earl Andrew C. Panimdim</td>
+    </tr>
+    <tr>
+      <td>School</td>
+      <td>Asia Pacific College</td>
+    </tr>
+    <tr>
+      <td>Year Level</td>
+      <td>2nd Year</td>
+    </tr>
+    <tr>
+      <td>Course</td>
+      <td>BS Computer Science (Cybersecurity and Forensics)</td>
+    </tr>
+  </table>
+</div>
+ 
+<div id="hobbies">
+  <h2>Hobbies &amp; Interests</h2>
+  <ul>
+    <li>Sleeping</li>
+    <li>Coding</li>
+  </ul>
+ 
+  <h2>Goals in Life</h2>
+  <ol>
+    <li>Contentment</li>
+  </ol>
+</div>
+ 
+<div id="gallery" class="center">
+  <h2>Picture Gallery</h2>
+  <p>
+    <img src="https://upload.wikimedia.org/wikipedia/en/5/55/Michael_Jackson_-_Thriller.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled" alt="michael jackson thriller" width="600" height="600">
+  </p>
+</div>
 
 </body>
 </html>
